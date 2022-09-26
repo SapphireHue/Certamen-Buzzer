@@ -113,3 +113,18 @@ function initializeCollapsible(button){
         }
     })
 }
+
+
+//Buzzing hotkey
+let buzzKey = " "
+document.addEventListener('keypress', function(event){ //deprecated but keyup doesn't prevent the downscroll
+    if (event.key=="b" && event.target==document.body) {
+        event.preventDefault()
+        endQuestion()
+        //console.log("????")
+    }
+    //other hotkeys go here as else if statements
+    else{
+        return
+    }
+})

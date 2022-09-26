@@ -267,3 +267,6 @@ function enableStart(){
         document.getElementById("next").disabled=false
     }
 }
+
+
+splitQuestions(sampleText) //for testing purposes only
