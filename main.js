@@ -114,6 +114,14 @@ function initializeCollapsible(button){
     })
 }
 
+function updateStatus(type, message){
+    let statusBox = document.getElementById("statusBox")
+    statusBox.setAttribute("class", type)
+    statusBox.firstChild.innerHTML = message
+    statusBox.style.display = "block"
+    sleep(2000)
+        .then(() => statusBox.style.display = "none")
+}
 
 //Buzzing hotkey
 let buzzKey = " "

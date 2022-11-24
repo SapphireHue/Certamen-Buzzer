@@ -46,9 +46,10 @@
             <p class="menuHead">Upload Custom Questions</p>
             <div class="menuContent">
                 <form>
-                    <textarea style="width: 90%; resize: vertical;" id="pasteTextInput" placeholder="Paste questions here..."></textarea>
+                    <textarea style="width: 95%; resize: vertical;" id="pasteTextInput" placeholder="Paste questions here..."></textarea>
                     <input type="file" style="max-width: 240px; display: none;" accept=".pdf" id="uploadPDFInput">
                     <input type="url" style="display: none;" id="googleDocLinkInput" placeholder="Link here..."> <br>
+                    <div id="statusBox" style="display: none;"><p></p></div>
                     <p>Source:</p>
                     <input type="radio" name="uploadType" id="pasteText" checked onclick="document.getElementById('pasteTextInput').style.display='initial'; document.getElementById('uploadPDFInput').style.display='none'; document.getElementById('googleDocLinkInput').style.display='none'">
                     <label for="pasteText">Paste text</label> <br>
