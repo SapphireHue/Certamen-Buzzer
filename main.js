@@ -120,7 +120,9 @@ function updateStatus(type, message){
     statusBox.firstChild.innerHTML = message
     statusBox.style.display = "block"
     sleep(2000)
-        .then(() => statusBox.style.display = "none")
+        .then(() => {
+            statusBox.style.display = "none"
+            statusBox.firstChild.innerHTML = ""})
 }
 
 //Buzzing hotkey
